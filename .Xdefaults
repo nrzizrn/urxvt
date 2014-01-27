@@ -1,0 +1,123 @@
+    !############
+    !
+    !man colors
+    !
+    !############
+
+    !URxvt.colorIT:      #87af5f
+    !URxvt.colorBD:      #d7d7d7
+    !URxvt.colorUL:      #87afd7
+
+
+    !#########################################
+    !
+    !       Xcursor.config
+    !
+    Xcursor*theme: Vanilla-DMZ
+
+    ! #########################################
+    !
+    !       Xterm config
+    !
+    XTerm*jumpScroll:               true
+    XTerm*multiScroll:              true
+
+    ! ################
+    ! tabs
+    URxvt.perl-ext-common:  default,tabbed
+
+    !#### Scripts
+    URxvt.perl-lib: /home/nrz/dev/urxvt-perls/
+    URxvt*termName: rxvt-unicode
+
+    ! #########################################
+    !
+    !       URxvt config
+    !
+    ! Xft settings ---------------------------------------------------------------
+
+	Xft.dpi:        96
+	Xft.antialias:  true
+	Xft.rgba:       rgb
+	Xft.hinting:    false
+	Xft.hintstyle:  hintslight
+
+	!
+	!-------------------------------------------------------------------------------
+	!
+	!	U R X V T - Settings
+	!
+
+    URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+    URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+    URxvt.keysym.M-u:           perl:url-select:select_next
+    URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+    URxvt.keysym.M-s:           perl:keyboard-select:search
+
+    URxvt.url-select.launcher:   /usr/bin/firefox -new-tab
+    URxvt.url-select.underline: true
+
+	URxvt.letterSpace: 0.3
+	URxvt*geometry:					100x35
+	URxvt*borderLess:				false
+	URxvt*depth:					32
+	URxvt*scrollBar_right:			false
+	URxvt*font:					xft:monospace:size=10
+	URxvt*cursorBlink:				true
+	URxvt*cursorUnderline:			true
+	URxvt*scrollColor:				#111111
+	URxvt*perl-ext-common:				default,clipboard,tabbed,matcher
+	URxvt.scrollBar:				off
+	#URxvt.iconFile:				~/icons/Terminal.svg
+	Rxvt.tabbed.tabbar-fg:			 7
+	URxvt.tabbed.tabbar-bg: 			0
+	URxvt.tabbed.tab-fg:    			4
+	URxvt.tabbed.tab-bg:    			0
+	URxvt*termName:				 	rxvt-256color
+	URxvt.urlLauncher:				/usr/bin/firefox
+	URxvt.matcher.button:				1
+
+	!---------------------------------------------------------------------------------
+	!
+	!	U R X V T - Colors
+	!
+	!---------------------------------------------------------------------------------
+
+    ! black
+    urxvt*color:    #141414
+    urxvt*color8:   #5C585C
+    ! red
+    urxvt*color1:   #F54E00
+    urxvt*color9:   #FF0000
+    ! green
+    urxvt*color2:   #45ED6F
+    urxvt*color10:  #00FF00
+    ! yellow
+    urxvt*color3:   #C4DE50
+    urxvt*color11:  #DDFF00
+    ! blue
+    urxvt*color4:   #4756F5
+    urxvt*color12:  #002BFF
+    ! magenta
+    urxvt*color5:   #EE69FA
+    urxvt*color13:  #FF00DD
+    ! cyan
+    urxvt*color6:   #6CF7EB
+    urxvt*color14:  #07B099
+    ! white
+    urxvt*color7:   #D6D6D6
+    urxvt*color15:  #FFFFFF
+	urxvt.background: #1c1c1c
+    urxvt.background: #000000
+	urxvt.foreground: 15
+    urxvt.foreground: #00EE00
+
+    !transparency
+    ! real trans
+    !urxvt*depth: 32
+    !urxvt*background: rgba:0000/0000/0200/c800
+    ! fake trans
+    urxvt*transparent: true
+    urxvt*shading: 30
+    ! rxvt-unicode
+    URxvt.urgentOnBell:  true
